@@ -1,0 +1,377 @@
+EESchema Schematic File Version 4
+LIBS:simplertk2b-breakout-board-reference-design-cache
+EELAYER 29 0
+EELAYER END
+$Descr A4 11693 8268
+encoding utf-8
+Sheet 1 1
+Title "simpleRTK2B Breakout Board"
+Date "2019-01-04"
+Rev "v2.0"
+Comp "Blok21 Software Ltd"
+Comment1 "Author: Nebojša Cvetković"
+Comment2 ""
+Comment3 ""
+Comment4 ""
+$EndDescr
+$Comp
+L Connector_Generic:Conn_01x08 J1
+U 1 1 5C15E588
+P 4550 3050
+F 0 "J1" H 4600 3550 50  0000 R CNN
+F 1 "Conn_SR2B_A" H 4600 3450 50  0000 R CNN
+F 2 "Connector_PinSocket_2.54mm:PinSocket_1x08_P2.54mm_Vertical" H 4550 3050 50  0001 C CNN
+F 3 "~" H 4550 3050 50  0001 C CNN
+	1    4550 3050
+	1    0    0    -1  
+$EndComp
+$Comp
+L Connector_Generic:Conn_01x06 J11
+U 1 1 5C15F2EA
+P 6650 3000
+F 0 "J11" H 6700 3400 50  0000 R CNN
+F 1 "Conn_SR2B_B" H 6700 3300 50  0000 R CNN
+F 2 "Connector_PinSocket_2.54mm:PinSocket_1x06_P2.54mm_Vertical" H 6650 3000 50  0001 C CNN
+F 3 "~" H 6650 3000 50  0001 C CNN
+	1    6650 3000
+	-1   0    0    -1  
+$EndComp
+$Comp
+L Connector_Generic:Conn_01x10 J2
+U 1 1 5C160484
+P 4550 4200
+F 0 "J2" H 4600 4800 50  0000 R CNN
+F 1 "Conn_SR2B_C" H 4600 4700 50  0000 R CNN
+F 2 "Connector_PinSocket_2.54mm:PinSocket_1x10_P2.54mm_Vertical" H 4550 4200 50  0001 C CNN
+F 3 "~" H 4550 4200 50  0001 C CNN
+	1    4550 4200
+	1    0    0    -1  
+$EndComp
+$Comp
+L Connector_Generic:Conn_01x08 J12
+U 1 1 5C160F90
+P 6650 3950
+F 0 "J12" H 6700 4450 50  0000 R CNN
+F 1 "Conn_SR2B_D" H 6700 4350 50  0000 R CNN
+F 2 "Connector_PinSocket_2.54mm:PinSocket_1x08_P2.54mm_Vertical" H 6650 3950 50  0001 C CNN
+F 3 "~" H 6650 3950 50  0001 C CNN
+	1    6650 3950
+	-1   0    0    -1  
+$EndComp
+NoConn ~ 4350 3050
+NoConn ~ 4350 3150
+NoConn ~ 4350 3250
+NoConn ~ 4350 3350
+NoConn ~ 4350 3450
+NoConn ~ 4350 3900
+NoConn ~ 4350 4000
+NoConn ~ 4350 4100
+NoConn ~ 4350 4200
+NoConn ~ 4350 4300
+NoConn ~ 4350 4500
+NoConn ~ 4350 4600
+NoConn ~ 4350 4700
+Wire Wire Line
+	4250 2950 4350 2950
+Wire Wire Line
+	4250 3800 4350 3800
+$Comp
+L power:+3V3 #PWR011
+U 1 1 5C1BDD63
+P 6950 4250
+F 0 "#PWR011" H 6950 4100 50  0001 C CNN
+F 1 "+3V3" V 6965 4378 50  0000 L CNN
+F 2 "" H 6950 4250 50  0001 C CNN
+F 3 "" H 6950 4250 50  0001 C CNN
+	1    6950 4250
+	0    1    -1   0   
+$EndComp
+$Comp
+L power:GND #PWR08
+U 1 1 5C1BE07B
+P 6950 3750
+F 0 "#PWR08" H 6950 3500 50  0001 C CNN
+F 1 "GND" V 6955 3622 50  0000 R CNN
+F 2 "" H 6950 3750 50  0001 C CNN
+F 3 "" H 6950 3750 50  0001 C CNN
+	1    6950 3750
+	0    -1   -1   0   
+$EndComp
+$Comp
+L power:GND #PWR09
+U 1 1 5C1BE129
+P 6950 3850
+F 0 "#PWR09" H 6950 3600 50  0001 C CNN
+F 1 "GND" V 6955 3722 50  0000 R CNN
+F 2 "" H 6950 3850 50  0001 C CNN
+F 3 "" H 6950 3850 50  0001 C CNN
+	1    6950 3850
+	0    -1   -1   0   
+$EndComp
+Wire Wire Line
+	6850 3750 6950 3750
+Wire Wire Line
+	6850 3850 6950 3850
+$Comp
+L power:+5V #PWR010
+U 1 1 5C1C4A8A
+P 6950 3950
+F 0 "#PWR010" H 6950 3800 50  0001 C CNN
+F 1 "+5V" V 6965 4078 50  0000 L CNN
+F 2 "" H 6950 3950 50  0001 C CNN
+F 3 "" H 6950 3950 50  0001 C CNN
+	1    6950 3950
+	0    1    1    0   
+$EndComp
+Wire Wire Line
+	6850 3950 6950 3950
+Wire Wire Line
+	6850 4250 6950 4250
+NoConn ~ 6850 2800
+NoConn ~ 6850 2900
+NoConn ~ 6850 3000
+NoConn ~ 6850 3100
+$Comp
+L power:GND #PWR01
+U 1 1 5C1E4379
+P 4250 4400
+F 0 "#PWR01" H 4250 4150 50  0001 C CNN
+F 1 "GND" V 4255 4272 50  0000 R CNN
+F 2 "" H 4250 4400 50  0001 C CNN
+F 3 "" H 4250 4400 50  0001 C CNN
+	1    4250 4400
+	0    1    1    0   
+$EndComp
+Wire Wire Line
+	4250 4400 4350 4400
+NoConn ~ 6850 4050
+NoConn ~ 6850 4150
+NoConn ~ 6850 4350
+NoConn ~ 6850 3200
+NoConn ~ 6850 3300
+Wire Wire Line
+	4350 2750 4250 2750
+Wire Wire Line
+	4350 2850 4250 2850
+Text GLabel 4250 2750 0    50   Input ~ 0
+GPS_TX
+Text GLabel 4250 2850 0    50   Input ~ 0
+GPS_RX
+Text GLabel 4250 2950 0    50   Input ~ 0
+XBEE_TX
+Text GLabel 4250 3800 0    50   Input ~ 0
+XBEE_RX
+NoConn ~ 6850 3650
+$Comp
+L power:GND #PWR07
+U 1 1 5C63457D
+P 6200 5200
+F 0 "#PWR07" H 6200 4950 50  0001 C CNN
+F 1 "GND" V 6205 5072 50  0000 R CNN
+F 2 "" H 6200 5200 50  0001 C CNN
+F 3 "" H 6200 5200 50  0001 C CNN
+	1    6200 5200
+	1    0    0    -1  
+$EndComp
+Text GLabel 6000 4700 1    50   Input ~ 0
+GEOFENCE
+$Comp
+L Connector_Generic:Conn_01x04 J7
+U 1 1 5C6383C5
+P 4800 4900
+F 0 "J7" H 4880 4892 50  0000 L CNN
+F 1 "Conn_SR2B_E" H 4880 4801 50  0000 L CNN
+F 2 "Connector_PinSocket_2.54mm:PinSocket_1x04_P2.54mm_Vertical" H 4800 4900 50  0001 C CNN
+F 3 "~" H 4800 4900 50  0001 C CNN
+	1    4800 4900
+	-1   0    0    1   
+$EndComp
+$Comp
+L power:GND #PWR05
+U 1 1 5C63BCBD
+P 6100 5200
+F 0 "#PWR05" H 6100 4950 50  0001 C CNN
+F 1 "GND" V 6105 5072 50  0000 R CNN
+F 2 "" H 6100 5200 50  0001 C CNN
+F 3 "" H 6100 5200 50  0001 C CNN
+	1    6100 5200
+	1    0    0    -1  
+$EndComp
+Text GLabel 5100 5000 2    50   Input ~ 0
+TIMEPULSE
+Wire Wire Line
+	5100 5000 5000 5000
+Text GLabel 5100 4900 2    50   Input ~ 0
+SAFEBOOT_N
+Text GLabel 5100 4800 2    50   Input ~ 0
+RESET_N
+Wire Wire Line
+	5100 4800 5000 4800
+Wire Wire Line
+	5000 4900 5100 4900
+Text GLabel 5100 4700 2    50   Input ~ 0
+TX_READY
+Wire Wire Line
+	5100 4700 5000 4700
+$Comp
+L Connector_Generic:Conn_01x02 J3
+U 1 1 5C63F059
+P 5750 1500
+F 0 "J3" H 5830 1492 50  0000 L CNN
+F 1 "Conn_UART_GPS" H 5830 1401 50  0000 L CNN
+F 2 "Connector_JST:JST_XH_S02B-XH-A_1x02_P2.50mm_Horizontal" H 5750 1500 50  0001 C CNN
+F 3 "~" H 5750 1500 50  0001 C CNN
+	1    5750 1500
+	1    0    0    -1  
+$EndComp
+$Comp
+L Connector_Generic:Conn_01x02 J4
+U 1 1 5C641AAF
+P 5750 1800
+F 0 "J4" H 5830 1792 50  0000 L CNN
+F 1 "Conn_UART_XBEE" H 5830 1701 50  0000 L CNN
+F 2 "Connector_JST:JST_XH_S02B-XH-A_1x02_P2.50mm_Horizontal" H 5750 1800 50  0001 C CNN
+F 3 "~" H 5750 1800 50  0001 C CNN
+	1    5750 1800
+	1    0    0    -1  
+$EndComp
+$Comp
+L Connector_Generic:Conn_01x02 J5
+U 1 1 5C641E05
+P 5750 2100
+F 0 "J5" H 5830 2092 50  0000 L CNN
+F 1 "Conn_POWER" H 5830 2001 50  0000 L CNN
+F 2 "Connector_JST:JST_XH_S02B-XH-A_1x02_P2.50mm_Horizontal" H 5750 2100 50  0001 C CNN
+F 3 "~" H 5750 2100 50  0001 C CNN
+	1    5750 2100
+	1    0    0    -1  
+$EndComp
+$Comp
+L power:GND #PWR03
+U 1 1 5C642490
+P 5450 2200
+F 0 "#PWR03" H 5450 1950 50  0001 C CNN
+F 1 "GND" V 5455 2072 50  0000 R CNN
+F 2 "" H 5450 2200 50  0001 C CNN
+F 3 "" H 5450 2200 50  0001 C CNN
+	1    5450 2200
+	0    1    1    0   
+$EndComp
+Text GLabel 5450 1500 0    50   Input ~ 0
+GPS_TX
+Text GLabel 5450 1900 0    50   Input ~ 0
+XBEE_RX
+Text GLabel 5450 1600 0    50   Input ~ 0
+GPS_RX
+Wire Wire Line
+	5450 1500 5550 1500
+Wire Wire Line
+	5450 1600 5550 1600
+Text GLabel 5450 1800 0    50   Input ~ 0
+XBEE_TX
+Wire Wire Line
+	5450 1800 5550 1800
+Wire Wire Line
+	5450 1900 5550 1900
+Wire Wire Line
+	5450 2100 5550 2100
+Wire Wire Line
+	5450 2200 5550 2200
+$Comp
+L Connector_Generic:Conn_01x02 J6
+U 1 1 5C645020
+P 5750 2400
+F 0 "J6" H 5830 2442 50  0000 L CNN
+F 1 "Conn_Extra" H 5830 2351 50  0000 L CNN
+F 2 "Connector_JST:JST_XH_S02B-XH-A_1x02_P2.50mm_Horizontal" H 5750 2400 50  0001 C CNN
+F 3 "~" H 5750 2400 50  0001 C CNN
+	1    5750 2400
+	1    0    0    -1  
+$EndComp
+Text GLabel 5450 2400 0    50   Input ~ 0
+GEOFENCE
+Text GLabel 5450 2500 0    50   Input ~ 0
+TIMEPULSE
+Wire Wire Line
+	5450 2500 5550 2500
+Wire Wire Line
+	5450 2400 5550 2400
+$Comp
+L power:+5V #PWR02
+U 1 1 5C64237C
+P 5450 2100
+F 0 "#PWR02" H 5450 1950 50  0001 C CNN
+F 1 "+5V" V 5465 2228 50  0000 L CNN
+F 2 "" H 5450 2100 50  0001 C CNN
+F 3 "" H 5450 2100 50  0001 C CNN
+	1    5450 2100
+	0    -1   -1   0   
+$EndComp
+$Comp
+L Connector_Generic:Conn_02x03_Odd_Even J8
+U 1 1 5C06373A
+P 6100 4900
+F 0 "J8" V 6104 4712 50  0000 R CNN
+F 1 "Conn_SR2B_F" V 6195 4712 50  0000 R CNN
+F 2 "Connector_PinSocket_2.54mm:PinSocket_2x03_P2.54mm_Vertical" H 6100 4900 50  0001 C CNN
+F 3 "~" H 6100 4900 50  0001 C CNN
+	1    6100 4900
+	0    -1   1    0   
+$EndComp
+NoConn ~ 6000 5200
+$Comp
+L power:+3V3 #PWR0101
+U 1 1 5C39424E
+P 6100 4700
+F 0 "#PWR0101" H 6100 4550 50  0001 C CNN
+F 1 "+3V3" V 6115 4828 50  0000 L CNN
+F 2 "" H 6100 4700 50  0001 C CNN
+F 3 "" H 6100 4700 50  0001 C CNN
+	1    6100 4700
+	-1   0    0    -1  
+$EndComp
+$Comp
+L Mechanical:MountingHole H1
+U 1 1 5C396C63
+P 4550 2250
+F 0 "H1" H 4650 2296 50  0000 L CNN
+F 1 "MountingHole" H 4650 2205 50  0000 L CNN
+F 2 "MountingHole:MountingHole_2.2mm_M2" H 4550 2250 50  0001 C CNN
+F 3 "~" H 4550 2250 50  0001 C CNN
+	1    4550 2250
+	-1   0    0    -1  
+$EndComp
+$Comp
+L Mechanical:MountingHole H2
+U 1 1 5C39731C
+P 6650 2250
+F 0 "H2" H 6750 2296 50  0000 L CNN
+F 1 "MountingHole" H 6750 2205 50  0000 L CNN
+F 2 "MountingHole:MountingHole_2.2mm_M2" H 6650 2250 50  0001 C CNN
+F 3 "~" H 6650 2250 50  0001 C CNN
+	1    6650 2250
+	1    0    0    -1  
+$EndComp
+$Comp
+L Mechanical:MountingHole H3
+U 1 1 5C3975D1
+P 4550 5600
+F 0 "H3" H 4650 5646 50  0000 L CNN
+F 1 "MountingHole" H 4650 5555 50  0000 L CNN
+F 2 "MountingHole:MountingHole_2.2mm_M2" H 4550 5600 50  0001 C CNN
+F 3 "~" H 4550 5600 50  0001 C CNN
+	1    4550 5600
+	-1   0    0    -1  
+$EndComp
+$Comp
+L Mechanical:MountingHole H4
+U 1 1 5C397A77
+P 6650 5600
+F 0 "H4" H 6750 5646 50  0000 L CNN
+F 1 "MountingHole" H 6750 5555 50  0000 L CNN
+F 2 "MountingHole:MountingHole_2.2mm_M2" H 6650 5600 50  0001 C CNN
+F 3 "~" H 6650 5600 50  0001 C CNN
+	1    6650 5600
+	1    0    0    -1  
+$EndComp
+$EndSCHEMATC
